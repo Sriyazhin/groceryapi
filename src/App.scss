@@ -1,0 +1,134 @@
+// $margin-base: 100px;
+// $margin-fortop: 8px;
+@import './assets/components/Cardcomponent.css';
+@import './assets/components/Offercomponent.scss';
+
+$margin-base: 100px;
+$margin-fortop: 8px;
+
+.wholepart{
+    background-color: rgb(0, 0, 0,0.03);
+    padding-bottom: 30px;
+}
+
+.myshoppingcart{
+    padding-left: $margin-base;
+    padding-top: $margin-base;
+    color: #116AB3;
+    font-size: 30px;
+    font-weight: 600;
+}
+.cardsandcalculation{
+    display: flex;
+    
+}
+.cardshere{
+display: flex;
+flex-direction: column;
+}
+
+.forcalculation{
+    margin-left: 50px;
+    
+}
+.forapplycoupon{
+    display: flex;
+    background-color: #EEF4FA;
+    padding-left: 25px;
+    height: 55px;
+    width: 350px;
+    margin-bottom: 20px;
+}
+.offerpercent{
+    display: flex;
+    align-items: center;
+}
+.applycoupon{
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+}
+.vectorsymbol{
+    display: flex;
+    align-items: center;
+    margin-left: $margin-base+10;
+}
+.summaryandlistbox{
+    border: 1px solid rgb(0, 0, 0,0.4);
+    border-radius: 5px;
+    margin-left: 16px;
+    width: 345px;
+    margin-top: 30px;
+    background-color: rgb(255, 255, 255);
+
+    .ordersummary{
+        display: flex;
+        justify-content: center;
+        padding-top: 25px;
+        padding-bottom: 10px;
+        font-weight: 500;
+        font-size: 19px;
+        color: rgb(0, 0, 0,0.8);
+    }
+    ul{
+        list-style: none;
+        font-size: 15px;
+        font-weight: 400;
+    }
+    li{
+        display: flex;
+        margin-bottom: 7px;
+    }
+    
+    .calculationlist{
+        display: flex;
+        margin-left: 25px;
+    }
+    #ordertotal{
+        font-weight: 500;
+        margin-top: 19px;
+        margin-bottom: 19px;
+        font-size: 18px;
+        color: rgb(0, 0, 0,0.8);
+        
+    }
+    #dis{
+        margin-left: -6px;
+        // direction:ltr;
+    }
+    
+}
+.checkout{
+    background-color: #116AB3;
+    width: 220px;
+    height: 45px;
+    margin-top: 40px;
+    margin-left: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 5px;
+}
+.services{
+    border: 1px solid rgb(0, 0, 0,0.3);
+    border-radius: 5px;
+    margin-left: $margin-base+20;
+    margin-top: $margin-fortop+20;
+    width: 1225px;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    padding-left: 30px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+.serviceimageandtitle{
+    margin-left: 80px;
+    
+}
+.servicetitle{
+    font-size: 12px;
+}

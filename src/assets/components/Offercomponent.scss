@@ -1,0 +1,34 @@
+$margin-base: 100px;
+$margin-fortop: 8px;
+
+.offerdetails{
+    box-shadow: 0 0 18px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    margin-left: 15px;
+    padding: 14px;
+    width: 320px;
+    margin-bottom: 15px;
+    background-color: rgb(255, 255, 255);
+}
+.codeandradio{
+    display: flex;
+}
+.code{
+    font-weight: 600;
+}
+.radiobutton{
+    margin-left: 210px;
+}
+.getfifty{
+    color: #27962B;
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: $margin-fortop+5;
+}
+.codeline{
+    margin-bottom: $margin-fortop;
+}
+.codedetails{
+    font-size: 12px;
+    margin-right: 20px;
+}

@@ -1,0 +1,130 @@
+$margin-base: 100px;
+$margin-fortop: 8px;
+
+.forcards{
+    border: 1px solid rgb(0, 0, 0,0.2);
+    margin-left: $margin-base+20;
+    padding-left: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    
+    .forimage{
+        display: flex;
+        align-items: center;
+    }
+
+    .forproductdetails{
+        margin-top: 25px;
+        margin-bottom: 25px;
+        margin-left: 40px;
+    }
+
+    .savefifteen{
+        margin-left: $margin-base;
+        margin-top: $margin-base;
+        width: 90px;
+        height: 40px;
+        display: flex;
+        color: white;
+        font-weight: 600;
+        justify-content: center;
+        align-items: center;
+        border-radius: 6px;
+        background-color: #D62850;
+        
+    }
+
+    .price{
+        margin-top: $margin-base+5;
+        margin-left: 35px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    .oldmrp{
+        margin-top: $margin-base+12;
+        margin-left: 10px;
+        color: rgb(0, 0, 0,0.6);
+        font-size: 12px;
+        font-weight: 600;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        hr{
+                  position: absolute;
+                  width: 54px;  
+                  top: 2px;
+        }
+    }
+    
+}
+.forproductdetails{
+    width: 280px;
+    .cardtitleandveg{
+        display: flex;
+        position: relative;
+    .cardtitle{
+        font-weight: 600;
+        color: rgb(0, 0, 0,0.8);
+    }
+    .rectangle{
+        margin-left: 30px;
+    }
+    .ellipse{
+        position: absolute;
+        top: 4.5px;
+        right: 3px;
+    }
+    
+}
+    .cardbrand{
+        margin-top: $margin-fortop;
+        font-size: 13px;
+        color: rgb(0, 0, 0,0.6);
+    }
+    .forproductsadd{
+        margin-top: $margin-fortop;
+        
+    }
+}
+.forproductsadd{
+    display: flex;
+    
+    .minus{
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        border-style: none;
+        background-color: #116AB3;
+        color: white;
+        font-size: 20px;
+    }
+    .numberofproducts{
+        border: 1px solid rgb(0, 0, 0,0.2);
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        margin: 3px;
+        margin-left: 2px;
+        width: 60px;
+        height: 28px;
+    }
+    .plus{
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        border-style: none;
+        background-color: #116AB3;
+        color: white;
+        font-size: 20px;
+    }
+}
+.dustbinbutton{
+    // margin-left: 50px;
+    position: absolute;
+    bottom: 110px;
+    left: 5px;
+    background-color: white;
+    border: none;
+}

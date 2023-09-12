@@ -1,0 +1,120 @@
+.forcards {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin-left: 120px;
+  padding-left: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  display: flex;
+  background-color: rgb(255, 255, 255);
+}
+.forcards .forimage {
+  display: flex;
+  align-items: center;
+}
+.forcards .forproductdetails {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 40px;
+}
+.forcards .savefifteen {
+  margin-left: 100px;
+  margin-top: 100px;
+  width: 90px;
+  height: 40px;
+  display: flex;
+  color: white;
+  font-weight: 600;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  background-color: #D62850;
+}
+.forcards .price {
+  margin-top: 105px;
+  margin-left: 35px;
+  font-weight: 700;
+  font-size: 20px;
+}
+.forcards .oldmrp {
+  margin-top: 112px;
+  margin-left: 10px;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 12px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.forcards .oldmrp hr {
+  position: absolute;
+  width: 54px;
+  top: 2px;
+}
+
+.forproductdetails {
+  width: 280px;
+}
+.forproductdetails .cardtitleandveg {
+  display: flex;
+  position: relative;
+}
+.forproductdetails .cardtitleandveg .cardtitle {
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.8);
+}
+.forproductdetails .cardtitleandveg .rectangle {
+  margin-left: 30px;
+}
+.forproductdetails .cardtitleandveg .ellipse {
+  position: absolute;
+  top: 4.5px;
+  right: 3px;
+}
+.forproductdetails .cardbrand {
+  margin-top: 8px;
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.6);
+}
+.forproductdetails .forproductsadd {
+  margin-top: 8px;
+}
+
+.forproductsadd {
+  display: flex;
+}
+.forproductsadd .minus {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border-style: none;
+  background-color: #116AB3;
+  color: white;
+  font-size: 20px;
+}
+.forproductsadd .numberofproducts {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  margin: 3px;
+  margin-left: 2px;
+  width: 60px;
+  height: 28px;
+}
+.forproductsadd .plus {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border-style: none;
+  background-color: #116AB3;
+  color: white;
+  font-size: 20px;
+}
+
+.dustbinbutton {
+  position: absolute;
+  bottom: 110px;
+  left: 5px;
+  background-color: white;
+  border: none;
+}/*# sourceMappingURL=Cardcomponent.css.map */

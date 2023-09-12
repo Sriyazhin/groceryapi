@@ -1,0 +1,168 @@
+@import './assets/components/Cardcomponent.css';
+.offerdetails {
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  margin-left: 15px;
+  padding: 14px;
+  width: 320px;
+  margin-bottom: 15px;
+  background-color: rgb(255, 255, 255);
+}
+
+.codeandradio {
+  display: flex;
+}
+
+.code {
+  font-weight: 600;
+}
+
+.radiobutton {
+  margin-left: 210px;
+}
+
+.getfifty {
+  color: #27962B;
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 13px;
+}
+
+.codeline {
+  margin-bottom: 8px;
+}
+
+.codedetails {
+  font-size: 12px;
+  margin-right: 20px;
+}
+
+.wholepart {
+  background-color: rgba(0, 0, 0, 0.03);
+  padding-bottom: 30px;
+}
+
+.myshoppingcart {
+  padding-left: 100px;
+  padding-top: 100px;
+  color: #116AB3;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.cardsandcalculation {
+  display: flex;
+}
+
+.cardshere {
+  display: flex;
+  flex-direction: column;
+}
+
+.forcalculation {
+  margin-left: 50px;
+}
+
+.forapplycoupon {
+  display: flex;
+  background-color: #EEF4FA;
+  padding-left: 25px;
+  height: 55px;
+  width: 350px;
+  margin-bottom: 20px;
+}
+
+.offerpercent {
+  display: flex;
+  align-items: center;
+}
+
+.applycoupon {
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+}
+
+.vectorsymbol {
+  display: flex;
+  align-items: center;
+  margin-left: 110px;
+}
+
+.summaryandlistbox {
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  margin-left: 16px;
+  width: 345px;
+  margin-top: 30px;
+  background-color: rgb(255, 255, 255);
+}
+.summaryandlistbox .ordersummary {
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+  padding-bottom: 10px;
+  font-weight: 500;
+  font-size: 19px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.summaryandlistbox ul {
+  list-style: none;
+  font-size: 15px;
+  font-weight: 400;
+}
+.summaryandlistbox li {
+  display: flex;
+  margin-bottom: 7px;
+}
+.summaryandlistbox .calculationlist {
+  display: flex;
+  margin-left: 25px;
+}
+.summaryandlistbox #ordertotal {
+  font-weight: 500;
+  margin-top: 19px;
+  margin-bottom: 19px;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.summaryandlistbox #dis {
+  margin-left: -6px;
+}
+
+.checkout {
+  background-color: #116AB3;
+  width: 220px;
+  height: 45px;
+  margin-top: 40px;
+  margin-left: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+.services {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  margin-left: 120px;
+  margin-top: 28px;
+  width: 1225px;
+  height: 100px;
+  background-color: rgb(255, 255, 255);
+  padding-left: 30px;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.serviceimageandtitle {
+  margin-left: 80px;
+}
+
+.servicetitle {
+  font-size: 12px;
+}/*# sourceMappingURL=App.css.map */
