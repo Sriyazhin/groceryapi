@@ -10,6 +10,7 @@ import paymentsimage from './assets/images/securepayment.png';
 import contactlessimage from './assets/images/contactlessdelivery.png';
 import dustbin from './assets/images/dustbin.png';
 
+
 import axios from "axios";
 import { useEffect } from "react";
 import { useState } from "react";
@@ -17,10 +18,12 @@ import { useNavigate } from 'react-router-dom';
 import Cardcomponent from './assets/components/Cardcomponent';
 import Offercomponent from './assets/components/Offercomponent';
 import Servicecomponent from './assets/components/Servicecomponent';
+import ClipLoader from 'react-spinners/ClipLoader';
 
 const Calculations = () =>{
     const [newcard,setNewcard] = useState([]);
     const [discount,setDiscount] = useState(0);
+    const [loading,setLoading] = useState(true);
 
     const offerdetailshere = [{codehere:'SANCHU200',offerpercentage:'Get 50% Off',valuehere:200},
   {codehere:'SANCHU100',offerpercentage:'Get 20% Off',valuehere:100}];
@@ -33,16 +36,23 @@ const Calculations = () =>{
   const shipfee=10;
   const gstfee=10;
   const navigate = useNavigate();
-
-    useEffect(() => {
-        getcard();
-        }, []);
-        console.log(newcard,'new');
     
+  // The cause of the issue is in the development of react 18 with strict mode, 
+  // the useEffect will be mounted -> unmounted -> mounted, which call the API twice.
         const getcard = () =>{
           axios.get('https://64dc7b7ce64a8525a0f68ee2.mockapi.io/newfields')
-          .then(res=>setNewcard(res.data))
+          .then(res=>{setNewcard(res.data);setLoading(false);})
         }
+
+        useEffect(() => {
+          // setLoading(false);
+          getcard();
+          
+          // setTimeout(()=>{
+          //   setLoading(true);
+          // },100)
+          
+          }, []);
 
         const deletecard = (cardid) => {
             axios.delete(`https://64dc7b7ce64a8525a0f68ee2.mockapi.io/newfields/${cardid}`)
@@ -50,7 +60,7 @@ const Calculations = () =>{
         }
         const handleAddClick = (index) => {
             const updateproduct = [...newcard];
-            newcard[index].count=newcard[index].count + 1;
+            newcard[index].count=parseInt(newcard[index].count) + 1;
             setNewcard(updateproduct);
             };
 
@@ -93,16 +103,24 @@ const Calculations = () =>{
            };
 
 return(
+  
+    loading ? <div className='spinner'><ClipLoader color="#36d7b7" /></div>:
 <div className='wholepart'>
+
+    
       <div className='myshoppingcart'>MY SHOPPING CART</div>
           <div className='cardsandcalculation'>
             <div className='cardshere'>
+            
+      
             {newcard.map(({imagename,count,id,productprice,title,brand,oldmrp},i) => {
               return(
                 <Cardcomponent key={i} count={count} cardimagehere={imagename} handledeleteclick={()=>{deletecard(id)}}  dustbin={dustbin} handleAddClick={()=>handleAddClick(i)} handleminusClick={()=>handleminusClick(i)} productprice={productprice}  oldmrp={oldmrp}  titlehere={title} brandhere={brand} rectangle={rectangle} ellipse={ellipse} />
               );
             })
-            }
+          }
+           
+          
               </div>      
           
           <div className='forcalculation'>
@@ -166,7 +184,10 @@ return(
           
         </div>
         <div><button onClick={()=>{navigate('/createhere')}}>CREATE</button></div>
+      
   </div>
+        
 );
 }
+
 export default Calculations;
