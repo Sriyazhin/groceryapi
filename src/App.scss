@@ -6,6 +6,13 @@
 $margin-base: 100px;
 $margin-fortop: 8px;
 
+.spinner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+}
+
 .wholepart{
     background-color: rgb(0, 0, 0,0.03);
     padding-bottom: 30px;
