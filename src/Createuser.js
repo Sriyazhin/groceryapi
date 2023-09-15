@@ -6,7 +6,7 @@ import './App.css';
 const Createuser = () =>{
     const [imagename,setimagename] = useState('');
     const [productprice,setproductprice] = useState('');
-    const [count,setcount] = useState('');
+    const [count,setcount] = useState(1);
     const [oldmrp,setoldmrp] = useState('');
     const [title,settitle] = useState('');
     const [brand,setbrand] = useState('');
